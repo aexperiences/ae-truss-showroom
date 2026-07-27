@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Truss OS · Engineering Firm OS</title>
+<meta name="description" content="Truss OS — the operating system for an engineering firm. One engine, every discipline. Powered by Accelerated Experiences LLC.">
+<link rel="icon" href="https://www.aexperiences.com/Truss_OS.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="truss.css">
+</head>
+<body>
+<div class="gate-wrap">
+  <main style="width:100%;max-width:740px">
+    <section class="card" style="padding:34px 36px 0;border-radius:16px;box-shadow:var(--sh-lg);margin-bottom:0">
+
+      <div class="row" style="gap:13px;align-items:center">
+        <div class="bmark" style="width:46px;height:46px" aria-hidden="true">
+          <img src="https://www.aexperiences.com/Truss_OS.png" alt="Truss OS"
+               onerror="this.style.display='none';this.parentNode.classList.add('fallback')">
+          <svg class="fallback-mark" viewBox="0 0 32 32" width="28" height="28" style="display:none" aria-hidden="true">
+            <g fill="none" stroke="#eaf6f9" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round">
+            <path d="M3 25 L16 6 L29 25 Z"/><path d="M3 25 L16 16 L29 25"/><path d="M16 6 L16 16"/></g>
+          </svg>
+        </div>
+        <div>
+          <div style="font-size:21px;font-weight:700;letter-spacing:-.024em;line-height:1.15">Truss OS</div>
+          <div class="muted mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;margin-top:2px">Engineering Firm OS</div>
+        </div>
+        <span class="spacer"></span>
+        <span class="tag mono ghost">SHOWROOM</span>
+      </div>
+
+      <div class="divider" style="margin:22px 0 20px"></div>
+
+      <h1 style="font-size:27px;letter-spacing:-.028em;line-height:1.2">The whole firm,<br>running as one engine.</h1>
+      <p style="font-size:14.5px;color:var(--ink-2);line-height:1.65;margin-top:14px;max-width:62ch">
+        Truss OS is the operating system for an engineering firm — pursuits and fees, the phase-native
+        project spine, the field log, calcs and standards, the PE-seal gate, the books and multipliers, and a
+        ten-department agent org routing underneath all of it.
+      </p>
+
+      <div class="fence" style="margin-top:18px">
+        <b>One engine, every discipline.</b> You don't build a separate system for civil, mechanical and software —
+        the money and the schedule math are identical. Truss runs the universal core and you flip a <b>module</b>:
+        Civil / Mechanical / Software. Change the discipline, not the software. Try the switch inside.
+      </div>
+
+      <div class="fence amber" style="margin-top:14px">
+        <b>This is the real OS, not a slideshow.</b> It runs entirely in your browser. Everything you type stays in
+        this tab, nothing is uploaded, and the floor resets when you leave. Nothing here sends, spends, publishes or
+        seals — anything that would is staged on the Approval Desk instead.
+      </div>
+
+      <div style="margin-top:24px">
+        <label class="f">The departments inside</label>
+        <div class="row" style="gap:6px">
+          <span class="tag">Modules · The Engine</span>
+          <span class="tag">Pursuits · Go/No-Go</span>
+          <span class="tag">Projects · WBS</span>
+          <span class="tag">Field · RFIs &amp; Submittals</span>
+          <span class="tag">Calcs &amp; Standards</span>
+          <span class="tag">PE Seal · IFC</span>
+          <span class="tag">Permits &amp; AHJ</span>
+          <span class="tag">Books &amp; Multipliers</span>
+          <span class="tag">HR · People Ops</span>
+          <span class="tag">Law · Contracts</span>
+        </div>
+        <p class="muted small" style="margin-top:10px;line-height:1.55">
+          Each one is a five-seat chain — department head, administrative executive, pacemaker, and two opposing
+          lenses — gated on a confidence bar before anything is released. Nova, the COO, routes and packages; she
+          does not do the work.
+        </p>
+      </div>
+
+      <div class="divider" style="margin:24px 0 20px"></div>
+      <div class="row" style="gap:14px">
+        <a class="btn blue" href="dashboard.html" id="enter" style="padding:12px 22px;font-size:14px">Enter the firm &rarr;</a>
+        <span class="muted small" style="max-width:34ch;line-height:1.5">Opens on the full Grandsuite build with every department switched on. Flip the module from the Modules room.</span>
+      </div>
+
+      <div class="ae-credit" style="margin:26px -36px 0;padding:16px 36px 22px">
+        Powered by <b>Accelerated Experiences LLC</b> · Truss OS is a white-label build. Demo data is a fictional firm; benchmark figures are sourced and tagged.
+      </div>
+    </section>
+  </main>
+</div>
+<script src="truss.js"></script>
+<script>
+(function () { var T = window.Truss; var a = document.getElementById("enter"); if (a && T) a.addEventListener("click", function () { T.resetFloor(); }); })();
+</script>
+</body>
+</html>

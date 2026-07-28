@@ -205,7 +205,7 @@
     grandsuite: { key:"grandsuite", name:"Grandsuite", rank:3, mo:2900, build:24000, desc:"The whole firm, nothing held back. Every department, the full agent org, the Modules engine, and contracts.", base:"Multi-office · unlimited seats · dedicated environment · data migration", includes:["pursuits","proposals","projects","workflow","calcs","billing","seal","permits","modules","books","hr","it","law","org"] }
   };
   var DEPTS = [
-    { group:"Command", items:[ { href:"dashboard.html", label:"Command Center", ic:"◎" }, { href:"approvals.html", label:"Approval Desk", ic:"✓", accent:"ops" } ]},
+    { group:"Command", items:[ { href:"dashboard.html", label:"Command Center", ic:"◎" }, { href:"calendar.html", label:"Calendar", ic:"▤" }, { href:"approvals.html", label:"Approval Desk", ic:"✓", accent:"ops" } ]},
     { group:"The Engine", items:[ { href:"modules.html", label:"Modules · The Engine", ic:"❖", room:"modules", accent:"modules" } ]},
     { group:"New Business", items:[ { href:"pursuits.html", label:"Pursuits · Go/No-Go", ic:"◆", room:"pursuits", accent:"pursuits" }, { href:"proposals.html", label:"Proposals & Fees", ic:"∑", room:"proposals", accent:"proposal" } ]},
     { group:"The Work", items:[ { href:"projects.html", label:"Projects · WBS", ic:"▦", room:"projects", accent:"projects" }, { href:"workflow.html", label:"Module Workflow", ic:"⇄", room:"workflow", accent:"field" }, { href:"calcs.html", label:"Calcs & Standards", ic:"§", room:"calcs", accent:"calcs" }, { href:"seal.html", label:"PE Seal · IFC", ic:"⊛", room:"seal", accent:"seal" }, { href:"permits.html", label:"Permits & AHJ", ic:"⇋", room:"permits", accent:"permits" } ]},

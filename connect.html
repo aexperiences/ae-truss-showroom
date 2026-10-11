@@ -78,13 +78,13 @@
   var T=window.Truss;
   var c=T.mount({active:"connect.html",crumb:"Connect"});
   var API=window.TRUSS_API+'/api/connect'; var NS='truss';
-  var TEAM=[
-    {slug:"dana-whitfield",name:"Dana Whitfield",role:"Principal / Engineer of Record",init:"DW"},
-    {slug:"marcus-lang",name:"Marcus Lang",role:"Project Engineer",init:"ML"},
-    {slug:"priya-anand",name:"Priya Anand",role:"Project Engineer",init:"PA"},
-    {slug:"theo-barnes",name:"Theo Barnes",role:"Design Engineer (EIT)",init:"TB"},
-    {slug:"ines-okafor",name:"Ines Okafor",role:"Office Manager",init:"IO"}
-  ];
+  /* The team — read from this system's own seeded people, never typed in here. */
+  var TEAM=(function(){ var D={}; try{ D=T.db()||{}; }catch(e){} var out=[], seen={};
+    function add(n,r){ n=String(n||"").trim(); if(!n||seen[n]) return; seen[n]=1;
+      var w=n.replace(/^Coach\s+/,"").replace(/,.*$/,"").split(/\s+/);
+      out.push({slug:n.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""),name:n,role:String(r||""),init:(((w[0]||"")[0]||"")+(w.length>1?w[w.length-1][0]:((w[0]||"")[1]||""))).toUpperCase()}); }
+    try{ (D.labor||[]).forEach(function(l){ add(l.name,l.role); }); }catch(e){}
+    return out; })();
   var CHANNELS=[
     {ch:"office",name:"# office",desc:"The whole firm"},
     {ch:"bridge-project",name:"# bridge-project",desc:"Prairie Ave bridge"},

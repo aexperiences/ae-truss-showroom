@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="100%" height="100%">
+<defs>
+<linearGradient id="tile" x1="0" y1="0" x2="0.35" y2="1">
+<stop offset="0%" stop-color="#7f9cb8"/><stop offset="46%" stop-color="#2f4f6e"/><stop offset="100%" stop-color="#0a1522"/></linearGradient>
+<linearGradient id="glare" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#fff" stop-opacity=".20"/><stop offset="44%" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<linearGradient id="pap" x1="0" y1="0" x2="0.3" y2="1">
+<stop offset="0%" stop-color="#fdfbf4"/><stop offset="100%" stop-color="#e8e2d2"/></linearGradient>
+<linearGradient id="gild" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#ffe08a"/><stop offset="100%" stop-color="#b98d1c"/></linearGradient>
+<linearGradient id="steel" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#e3e8ec"/><stop offset="100%" stop-color="#8e99a2"/></linearGradient>
+<linearGradient id="wood" x1="0" y1="0" x2="0.2" y2="1">
+<stop offset="0%" stop-color="#a9743f"/><stop offset="100%" stop-color="#5d3c1c"/></linearGradient>
+<linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<linearGradient id="screen" x1="0" y1="0" x2="0.3" y2="1">
+<stop offset="0%" stop-color="#1d3a4e"/><stop offset="100%" stop-color="#0a1824"/></linearGradient>
+<linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#e0a83a"/><stop offset="100%" stop-color="#9a6f14"/></linearGradient>
+</defs>
+<rect width="1024" height="1024" fill="url(#tile)"/><rect width="1024" height="1024" fill="url(#glare)"/>
+<circle cx="512" cy="400" r="246" fill="#e0a83a" opacity="0.040"/><path d="M527 250 L512 100 L497 250 Z" fill="#e0a83a" opacity=".18"/><path d="M595 275 L620 213 L579 266 Z" fill="#e0a83a" opacity=".18"/><path d="M649 338 L772 250 L634 312 Z" fill="#e0a83a" opacity=".18"/><path d="M662 409 L728 400 L662 391 Z" fill="#e0a83a" opacity=".18"/><path d="M634 488 L772 550 L649 462 Z" fill="#e0a83a" opacity=".18"/><path d="M579 534 L620 587 L595 525 Z" fill="#e0a83a" opacity=".18"/><path d="M497 550 L512 700 L527 550 Z" fill="#e0a83a" opacity=".18"/><path d="M429 525 L404 587 L445 534 Z" fill="#e0a83a" opacity=".18"/><path d="M375 462 L252 550 L390 488 Z" fill="#e0a83a" opacity=".18"/><path d="M362 391 L296 400 L362 409 Z" fill="#e0a83a" opacity=".18"/><path d="M390 312 L252 250 L375 338 Z" fill="#e0a83a" opacity=".18"/><path d="M445 266 L404 213 L429 275 Z" fill="#e0a83a" opacity=".18"/>
+<path d="M0 812 L1024 812 L1024 1024 L0 1024 Z" fill="#0a1522" opacity=".70"/><rect x="0" y="812" width="1024" height="5" fill="#fff" opacity=".10"/>
+<ellipse cx="512" cy="886" rx="330" ry="30" fill="#000" opacity=".42"/>
+<rect x="396" y="170" width="232" height="104" rx="14" fill="#e0a83a"/><rect x="424" y="206" width="176" height="18" rx="9" fill="#3a2a10"/><path d="M512 274 L512 330 M196 330 L828 330 M196 330 L196 388 M512 330 L512 388 M828 330 L828 388" stroke="#8aa4bc" stroke-width="9" fill="none"/><rect x="96" y="388" width="200" height="94" rx="12" fill="#2b4760"/><rect x="120" y="420" width="140" height="14" rx="7" fill="#9fc0d8"/><rect x="120" y="446" width="92" height="12" rx="6" fill="#6f90a8"/><rect x="412" y="388" width="200" height="94" rx="12" fill="#2b4760"/><rect x="436" y="420" width="140" height="14" rx="7" fill="#9fc0d8"/><rect x="436" y="446" width="92" height="12" rx="6" fill="#6f90a8"/><rect x="728" y="388" width="200" height="94" rx="12" fill="#2b4760"/><rect x="752" y="420" width="140" height="14" rx="7" fill="#9fc0d8"/><rect x="752" y="446" width="92" height="12" rx="6" fill="#6f90a8"/><path d="M196 482 L196 536 M118 536 L274 536 M118 536 L118 586 M274 536 L274 586" stroke="#8aa4bc" stroke-width="8" fill="none"/><path d="M512 482 L512 536 M434 536 L590 536 M434 536 L434 586 M590 536 L590 586" stroke="#8aa4bc" stroke-width="8" fill="none"/><path d="M828 482 L828 586" stroke="#8aa4bc" stroke-width="8" fill="none"/><rect x="56" y="586" width="124" height="74" rx="10" fill="#1d3448"/><rect x="74" y="612" width="84" height="12" rx="6" fill="#7f9cb8"/><rect x="212" y="586" width="124" height="74" rx="10" fill="#1d3448"/><rect x="230" y="612" width="84" height="12" rx="6" fill="#7f9cb8"/><rect x="372" y="586" width="124" height="74" rx="10" fill="#1d3448"/><rect x="390" y="612" width="84" height="12" rx="6" fill="#7f9cb8"/><rect x="528" y="586" width="124" height="74" rx="10" fill="#1d3448"/><rect x="546" y="612" width="84" height="12" rx="6" fill="#7f9cb8"/><rect x="766" y="586" width="124" height="74" rx="10" fill="#1d3448"/><rect x="784" y="612" width="84" height="12" rx="6" fill="#7f9cb8"/></svg>

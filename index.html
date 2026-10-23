@@ -1,106 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Truss OS · Engineering Firm OS</title>
-<meta name="description" content="Truss OS — the operating system for an engineering firm. One engine, every discipline. Powered by Accelerated Experiences LLC.">
-<link rel="icon" href="https://www.aexperiences.com/Truss_OS.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="truss.css">
-<link rel="canonical" href="https://www.aexperiences.com/apps/truss/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Accelerated Experiences LLC">
-<meta property="og:title" content="Truss OS — Engineering firm OS">
-<meta property="og:description" content="Job tracking, submittals, field notes and billing for an engineering firm — one system instead of six.">
-<meta property="og:url" content="https://www.aexperiences.com/apps/truss/">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Truss OS — the operating system for an engineering firm</title>
+<meta name="description" content="Truss OS runs an engineering firm end to end: pursuits and fees, the phase-native project spine, RFIs and submittals, calcs and standards with an independent check, the PE seal gate, permits, billing and the multipliers. One engine, every discipline. A white-label build by Accelerated Experiences LLC.">
+<link rel="canonical" href="https://aexperiences.studio/apps/truss/">
+<meta property="og:title" content="Truss OS — engineering firm operating system">
+<meta property="og:description" content="One engine for civil, mechanical or software: flip the discipline, not the software. Pursuits, projects, calcs, the PE seal gate, permits, billing and the multipliers. Walk in and use it.">
 <meta property="og:image" content="https://www.aexperiences.com/Truss_OS.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aexperiences.studio/apps/truss/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Truss OS — Engineering firm OS">
-<meta name="twitter:description" content="Job tracking, submittals, field notes and billing for an engineering firm — one system instead of six.">
-<meta name="twitter:image" content="https://www.aexperiences.com/Truss_OS.png">
+<link rel="icon" href="https://www.aexperiences.com/Truss_OS.png">
+<link rel="apple-touch-icon" href="https://www.aexperiences.com/Truss_OS.png">
+<meta name="theme-color" content="#18b0ba">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap">
+<style>
+  :root{--card:#fffaf0;--sunk:#f4ecdc;--line:#e4d7bc;--ink:#211a14;--ink-2:#3d3128;--mut:#7a6d5e;--acc:#18b0ba}
+  *{box-sizing:border-box}
+  body,.lede,.gf h3,.gf p,.gfoot,.alt a{font-variant-ligatures:none;font-feature-settings:"liga" 0,"calt" 0}
+  body{margin:0;font-family:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:linear-gradient(165deg,#55616f,#39434f 60%,#272e36);-webkit-font-smoothing:antialiased}
+  .gate{min-height:100dvh;display:flex;align-items:center;justify-content:center;padding:34px max(16px,env(safe-area-inset-right,0px)) 34px max(16px,env(safe-area-inset-left,0px))}
+  .gcard{max-width:940px;width:100%;background:var(--card);border-radius:20px;overflow:hidden;box-shadow:0 40px 90px -30px rgba(0,0,0,.55)}
+  .gtop{display:flex;gap:18px;align-items:center;padding:30px 34px 24px;border-bottom:1px solid var(--line)}
+  .gtop img{width:74px;height:74px;border-radius:17px;display:block;flex:none}
+  .gtop h1{margin:0;font-size:27px;letter-spacing:-.01em;color:var(--ink);font-weight:700}
+  .gtop p{margin:5px 0 0;font-size:14px;color:var(--mut)}
+  .gbody{padding:26px 34px 30px}
+  .lede{font-size:16.5px;line-height:1.65;color:var(--ink-2);margin:0 0 22px;max-width:66ch}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:24px}
+  .gf{min-width:0}
+  .gf h3{margin:0 0 5px;font-size:13.5px;color:var(--ink)}
+  .gf p{margin:0;font-size:12.8px;line-height:1.55;color:var(--mut)}
+  .enter{display:inline-flex;align-items:center;gap:9px;background:var(--acc);color:#fff;border:none;padding:15px 26px;border-radius:12px;font-size:16px;font-weight:600;text-decoration:none;cursor:pointer}
+  .enter:hover{filter:brightness(.92)}
+  .enter:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+  .alt{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+  .alt a{font-size:13px;color:var(--ink-2);text-decoration:none;border:1px solid var(--line);border-radius:9px;padding:9px 14px;background:var(--card)}
+  .alt a:hover{border-color:var(--acc);color:var(--acc)}
+  .gfoot{padding:16px 34px;background:var(--sunk);font-size:12px;color:var(--mut);line-height:1.6}
+  .gfoot b{color:var(--ink-2)}
+  @media(max-width:760px){.gtop{padding:22px 20px 18px;gap:13px}.gtop img{width:56px;height:56px}.gtop h1{font-size:21px}.gbody{padding:20px}.grid3{grid-template-columns:1fr;gap:14px}.gfoot{padding:14px 20px}.enter{width:100%;justify-content:center}}
+  @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
 </head>
 <body>
-<div class="gate-wrap">
-  <main style="width:100%;max-width:740px">
-    <section class="card" style="padding:34px 36px 0;border-radius:16px;box-shadow:var(--sh-lg);margin-bottom:0">
-
-      <div class="row" style="gap:13px;align-items:center">
-        <div class="bmark" style="width:46px;height:46px" aria-hidden="true">
-          <img src="https://www.aexperiences.com/Truss_OS.png" alt="Truss OS"
-               onerror="this.style.display='none';this.parentNode.classList.add('fallback')">
-          <svg class="fallback-mark" viewBox="0 0 32 32" width="28" height="28" style="display:none" aria-hidden="true">
-            <g fill="none" stroke="#eaf6f9" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round">
-            <path d="M3 25 L16 6 L29 25 Z"/><path d="M3 25 L16 16 L29 25"/><path d="M16 6 L16 16"/></g>
-          </svg>
-        </div>
-        <div>
-          <div style="font-size:21px;font-weight:700;letter-spacing:-.024em;line-height:1.15">Truss OS</div>
-          <div class="muted mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;margin-top:2px">Engineering Firm OS</div>
-        </div>
-        <span class="spacer"></span>
-        <span class="tag mono ghost">SHOWROOM</span>
-      </div>
-
-      <div class="divider" style="margin:22px 0 20px"></div>
-
-      <h1 style="font-size:27px;letter-spacing:-.028em;line-height:1.2">The whole firm,<br>running as one engine.</h1>
-      <p style="font-size:14.5px;color:var(--ink-2);line-height:1.65;margin-top:14px;max-width:62ch">
-        Truss OS is the operating system for an engineering firm — pursuits and fees, the phase-native
-        project spine, the field log, calcs and standards, the PE-seal gate, the books and multipliers, and a
-        ten-department agent org routing underneath all of it.
-      </p>
-
-      <div class="fence" style="margin-top:18px">
-        <b>One engine, every discipline.</b> You don't build a separate system for civil, mechanical and software —
-        the money and the schedule math are identical. Truss runs the universal core and you flip a <b>module</b>:
-        Civil / Mechanical / Software. Change the discipline, not the software. Try the switch inside.
-      </div>
-
-      <div class="fence amber" style="margin-top:14px">
-        <b>This is the real OS, not a slideshow.</b> It runs entirely in your browser. Everything you type stays in
-        this tab, nothing is uploaded, and the floor resets when you leave. Nothing here sends, spends, publishes or
-        seals — anything that would is staged on the Approval Desk instead.
-      </div>
-
-      <div style="margin-top:24px">
-        <label class="f">The departments inside</label>
-        <div class="row" style="gap:6px">
-          <span class="tag">Modules · The Engine</span>
-          <span class="tag">Pursuits · Go/No-Go</span>
-          <span class="tag">Projects · WBS</span>
-          <span class="tag">Field · RFIs &amp; Submittals</span>
-          <span class="tag">Calcs &amp; Standards</span>
-          <span class="tag">PE Seal · IFC</span>
-          <span class="tag">Permits &amp; AHJ</span>
-          <span class="tag">Books &amp; Multipliers</span>
-          <span class="tag">HR · People Ops</span>
-          <span class="tag">Law · Contracts</span>
-        </div>
-        <p class="muted small" style="margin-top:10px;line-height:1.55">
-          Each one is a five-seat chain — department head, administrative executive, pacemaker, and two opposing
-          lenses — gated on a confidence bar before anything is released. Nova, the COO, routes and packages; she
-          does not do the work.
-        </p>
-      </div>
-
-      <div class="divider" style="margin:24px 0 20px"></div>
-      <div class="row" style="gap:14px">
-        <a class="btn blue" href="dashboard.html" id="enter" style="padding:12px 22px;font-size:14px">Enter the firm &rarr;</a>
-        <span class="muted small" style="max-width:34ch;line-height:1.5">Opens on the full Grandsuite build with every department switched on. Flip the module from the Modules room.</span>
-      </div>
-
-      <div class="ae-credit" style="margin:26px -36px 0;padding:16px 36px 22px">
-        <a href="https://www.aexperiences.com/" class="ae-triad" aria-label="AOS — Accelerated Experiences LLC"><img src="/marks/aos-badge.png" alt="AOS — Accelerated Operating Systems" style="height:30px;width:auto;vertical-align:middle"></a><br>Truss OS is a white-label build. Demo data is a fictional firm; benchmark figures are sourced and tagged.
-      </div>
-    </section>
-  </main>
-</div>
+<div class="gate"><div class="gcard">
+  <div class="gtop">
+    <img src="https://www.aexperiences.com/Truss_OS.png" alt="Truss OS">
+    <div><h1>Truss OS</h1><p>The operating system for an engineering firm</p></div>
+  </div>
+  <div class="gbody">
+    <p class="lede">An engineering firm does not run on deals. It runs on sealed sets — where a calc package goes out with an independent check or it does not go out, where the money and the schedule math are the same whether the work is civil, mechanical or software, and where the number that tells you the firm is healthy is a multiplier nobody computes by hand. Truss OS is built around that.</p>
+    <div class="grid3">
+      <div class="gf"><h3>The PE seal gate</h3><p>Nothing issues for construction until a licensed engineer seals it. Sets ready for the stamp, and sets already sealed, sit on the home screen.</p></div>
+      <div class="gf"><h3>One engine, every discipline</h3><p>Civil, mechanical or software: the universal core runs the firm and you flip the module. Change the discipline, not the software.</p></div>
+      <div class="gf"><h3>Calcs with an independent check</h3><p>Calc packages move through QA/QC before they are allowed near a set. The ones waiting on a second pair of eyes are counted every day.</p></div>
+      <div class="gf"><h3>Pursuits with a go/no-go</h3><p>The pipeline and the hallway argument, replaced by a go/no-go on every pursuit and a fee proposal built before the letter goes out.</p></div>
+      <div class="gf"><h3>RFIs, submittals and permits</h3><p>Ball-in-court on every RFI and submittal, and every permit in review with the authority, so nothing waits on the engineer unnoticed.</p></div>
+      <div class="gf"><h3>The multipliers, computed</h3><p>Utilization, net multiplier, realization, backlog, AR and WIP fall out of the same hours and invoices — not reconstructed at quarter end.</p></div>
+    </div>
+    <a class="enter" id="enter" href="dashboard.html">Walk in and use it &rarr;</a>
+    <div class="alt">
+      <a href="seal.html">Seal a ready set</a>
+      <a href="pursuits.html">Go or no-go on a pursuit</a>
+      <a href="modules.html">Flip the discipline</a>
+      <a href="workflow.html">Answer an RFI</a>
+      <a href="books.html">Read the net multiplier</a>
+    </div>
+  </div>
+  <div class="gfoot">
+    This is the real system running in your browser, not a slideshow — everything you type stays on your device and
+    nothing is uploaded. It opens on a realistic sample firm; the ribbon at the top clears it so you can enter your own.
+    <b>Truss OS is a white-label build by Accelerated Experiences LLC.</b>
+    Nothing here is legal, tax or engineering advice; the seal is the engineer&#x27;s.
+  </div>
+</div></div>
 <script src="truss.js"></script>
-<script>
-(function () { var T = window.Truss; var a = document.getElementById("enter"); if (a && T) a.addEventListener("click", function () { T.resetFloor(); }); })();
-</script>
+<script>(function(){var E=window.Truss;var a=document.getElementById("enter");if(a&&E&&E.resetFloor)a.addEventListener("click",function(){E.resetFloor();});})();</script>
 </body>
 </html>
